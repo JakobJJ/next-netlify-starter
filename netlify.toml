@@ -4,3 +4,11 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+  
+  [tls.options]
+
+  [tls.options.default]
+    minVersion = "VersionTLS12"
+
+  [tls.options.mintls13]
+    minVersion = "VersionTLS13"
